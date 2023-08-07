@@ -14,8 +14,6 @@ import io.restassured.response.Response;
 public class DynamicResponse {
 	@Test
 	public void test() {
-	
-	
 		baseURI="http://rmgtestingserver";
 		port=8084;
 		String exp="Mohittt";
@@ -31,8 +29,6 @@ public class DynamicResponse {
 	     Assert.assertTrue(flag);
 	     System.out.println("---verified-----");
 	   
-	     
-	     res.then().log().all();
-	     
+	     res.then().log().all(); 
 	}
 }

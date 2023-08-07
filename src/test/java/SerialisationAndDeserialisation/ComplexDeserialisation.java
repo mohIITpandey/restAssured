@@ -12,7 +12,6 @@ import PojoClass.Employee;
 import PojoClass.Employee2SpouseAndPhNoComplexData;
 
 public class ComplexDeserialisation {
-	
 	@Test
 	public void test() throws JsonParseException, JsonMappingException, IOException {
 	

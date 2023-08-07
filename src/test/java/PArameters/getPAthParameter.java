@@ -7,11 +7,8 @@ import io.restassured.http.ContentType;
 import static io.restassured.RestAssured.*;
 
 public class getPAthParameter {
-
 	@Test
-	
 	public void testt() {
-		
 		baseURI="http://rmgtestingserver";
 		port=8084;
 		
@@ -19,9 +16,6 @@ public class getPAthParameter {
 		
 		.when().get("/projects/{pid}")
 		
-		.then().log().all().assertThat().statusCode(200);
-		
-	}
-	
-	
+		.then().log().all().assertThat().statusCode(200);	
+	}	
 }

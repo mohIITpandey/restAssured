@@ -39,5 +39,4 @@ public Spouse getSpouse() {
 public void setSpouse(Spouse spouse) {
 	this.spouse = spouse;
 }
-
 }

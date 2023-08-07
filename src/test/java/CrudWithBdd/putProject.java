@@ -22,8 +22,6 @@ public class putProject {
 		
 		 System.out.println(res.prettyPeek());
 		
-		 
 		 res.then().assertThat().statusCode(200);
 	}
-	
 }

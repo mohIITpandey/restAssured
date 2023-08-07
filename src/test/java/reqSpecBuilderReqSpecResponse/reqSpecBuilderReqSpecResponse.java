@@ -22,17 +22,13 @@ public void test() {
 			                  .setContentType(ContentType.JSON).build();
 	 
 	 ResponseSpecification reqR = new ResponseSpecBuilder()
-			 .expectContentType(ContentType.JSON)
-			 .expectStatusCode(201).build();
-	 
-	 
+			                   .expectContentType(ContentType.JSON)
+			                   .expectStatusCode(201).build();
+
 	 given().spec(reqB).body(poj)
 	 
 	 .when().post("/addProject")
 	 
-	 .then().spec(reqR).log().all();
-	
-	 
-	                  
+	 .then().spec(reqR).log().all();                  
 }
 }

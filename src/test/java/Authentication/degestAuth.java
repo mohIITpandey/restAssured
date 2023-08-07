@@ -7,9 +7,6 @@ import static io.restassured.RestAssured.port;
 import org.testng.annotations.Test;
 
 public class degestAuth {
-
-	
-
 	@Test
 	public void test() {
 		baseURI="http://rmgtestingserver";
@@ -19,9 +16,6 @@ public class degestAuth {
 		
 		.when().get("/login")
 		
-		.then().assertThat().statusCode(202).log().all();
-		
-	}
-
-	
+		.then().assertThat().statusCode(202).log().all();	
+	}	
 }

@@ -13,7 +13,6 @@ import io.restassured.http.ContentType;
 
 public class putPAthPArameter {
 @Test
-
 public void test() {
 	baseURI="http://rmgtestingserver";
 	port=8084;
@@ -32,7 +31,6 @@ public void test() {
 	.when().put("/projects/{pid}")
 	
 	.then().log().all().assertThat().statusCode(200);
-
 }
 }
 

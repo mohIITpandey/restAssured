@@ -12,6 +12,5 @@ public void test() {
 	when().get("projects/TY_PROJ_8938")
 	
 	.then().log().all().assertThat().statusCode(200);
-
 }
 }

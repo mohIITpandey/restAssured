@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 import PojoClass.Employee;
 
 public class DeSeriallisation {
-	
 	@Test
 	public void test() throws JsonParseException, JsonMappingException, IOException {
 	  ObjectMapper omap= new ObjectMapper();

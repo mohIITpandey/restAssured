@@ -16,8 +16,6 @@ public void test() throws JsonGenerationException, JsonMappingException, IOExcep
 	ObjectMapper omap= new ObjectMapper();
 	long[]phno= {9876543210l,98765432165l};
 	Employee1 emp= new Employee1("MohitPandey","TestEngg.",105, phno);
-     omap.writeValue(new File("./emp1.Json"), emp);
-	
-	
+     omap.writeValue(new File("./emp1.Json"), emp);	
 }
 }

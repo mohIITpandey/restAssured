@@ -32,10 +32,8 @@ public class BaseClass {
 		resB=new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
 		
 	}
-	
 	@AfterSuite
 	public void closeDataBase() throws SQLException {
 		DbUtils.closeDataBaseConnection();
-	}
-	
+	}	
 }

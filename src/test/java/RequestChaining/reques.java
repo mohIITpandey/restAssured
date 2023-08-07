@@ -16,18 +16,6 @@ public class reques {
 
 		baseURI="https://reqres.in/";
 		
-//		JSONObject jobj=new JSONObject();
-//		jobj.put("name","mohit321");
-//		jobj.put("job","TestEngg.");
-//		  
-//		Response res = given().body(jobj).contentType(ContentType.JSON)
-//		.when().post("https://reqres.in/api/users");
-//		res.then().log().all().assertThat().statusCode(201);
-//		Object idd = res.jsonPath().get("id");
-//		System.out.println(idd);
-//		
-//		when().get("").then().log().all();
-    
 		Response res = when().get("/api/users?page=2");
 		res.then().log().all().assertThat().statusCode(200);
 		
@@ -36,16 +24,5 @@ public class reques {
 		
 		when().get("/api/users/"+idd)
 		.then().log().all().assertThat().statusCode(200);
-		
-		
-		
-		
-		
-		  
-	
-		
-		
-
-	}
-
+}
 }

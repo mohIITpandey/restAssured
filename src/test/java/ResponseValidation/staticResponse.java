@@ -24,26 +24,5 @@ public class staticResponse {
 		System.out.println("---------verified-------");
 		
 		res.then().log().all();
-	
-	
-//	@Test
-//	public void test() {
-//		baseURI="http://rmgtestingserver";
-//		port=8084;
-//		
-//		Response res = when().get("projects");
-//		 Object act = res.jsonPath().get("createdBy");
-//
-//System.out.println(act);
-     
-	   // String[]a=(String[])act;
-	//	System.out.println(a);
-		
-//LinkedHashSet<Object> set=new LinkedHashSet<Object>();
-//
-////for(Object obj:) {
-////	set.add(act);
-////}
-//System.out.println(set);
 	}
 }

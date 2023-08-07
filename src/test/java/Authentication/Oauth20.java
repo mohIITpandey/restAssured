@@ -7,8 +7,7 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 
 public class Oauth20 {
-
-	@Test
+    @Test
 	public void oauth2() {
 		//create a request to generate a token
 		Response res = given().formParam("client_id", "Magnet")
@@ -29,8 +28,6 @@ public class Oauth20 {
 		.pathParam("USER_ID",4578)
 		
 		.when().post("http://coop.apps.symfonycasts.com/api/{USER_ID}/eggs-count")
-		.then().log().all();
-		
-		
+		.then().log().all();	
 	}
 }

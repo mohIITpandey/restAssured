@@ -35,14 +35,6 @@ public class createProject {
 		System.out.println(response.getContentType());
 		System.out.println(response.asString());
 	    System.out.println(response.prettyPrint());
-	    System.out.println(response.prettyPeek());
-		
-
-		
-		
-		
-		
-		
+	    System.out.println(response.prettyPeek());	
 	}
-
 }

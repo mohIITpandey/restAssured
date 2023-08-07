@@ -10,7 +10,6 @@ import io.restassured.http.ContentType;
 
 public class DeletePathParameter {
 	@Test
-	
 	public void testt() {
 	baseURI="http://rmgtestingserver";
 	port=8084;
@@ -19,7 +18,6 @@ public class DeletePathParameter {
 	
 	.when().delete("/projects/{pid}")
 	
-	.then().log().all().assertThat().statusCode(204);
-	
+	.then().log().all().assertThat().statusCode(204);	
 }
 }

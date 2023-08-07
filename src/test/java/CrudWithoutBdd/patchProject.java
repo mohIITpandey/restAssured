@@ -25,9 +25,6 @@ public class patchProject {
 		System.out.println(response.asString());
 	    System.out.println(response.prettyPrint());
 	    System.out.println(response.prettyPeek());
-		
-
 		   int actstat = response.getStatusCode();
 		   Assert.assertEquals(200,actstat);
-		
 	}}

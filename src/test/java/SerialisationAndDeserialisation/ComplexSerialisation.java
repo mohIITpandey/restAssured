@@ -22,6 +22,5 @@ public void test() throws JsonGenerationException, JsonMappingException, IOExcep
 	ObjectMapper omap= new ObjectMapper();
 	Employee2SpouseAndPhNoComplexData emp=new Employee2SpouseAndPhNoComplexData("pradeep",101,phNum,spouse);
     omap.writeValue(new File("./emp"+jlib.getRandomNum()+".json"), emp);
-
 }
 }

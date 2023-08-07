@@ -38,6 +38,5 @@ public long getPhoneNo() {
 }
 public void setPhoneNo(long phoneNo) {
 	this.phoneNo = phoneNo;
-}
- 
+} 
 }

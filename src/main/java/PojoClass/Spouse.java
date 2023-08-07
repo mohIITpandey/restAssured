@@ -33,6 +33,4 @@ public long[] getPhNo() {
 public void setPhNo(long[] phNo) {
 	this.phNo = phNo;
 }
-
-
 }

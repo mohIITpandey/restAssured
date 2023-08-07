@@ -22,20 +22,18 @@ public void test() {
 	 Response res = given().body(poj).contentType(ContentType.JSON)
 	 
 	 .when().post("/addProject");
-	 res.then().log().all();
-	 
+	 res.then().log().all(); 
 	 
 	String pid = res.jsonPath().get("projectId");
 	System.out.println(pid);
 	
 	
-	//when().get("/projects/"+pid).then().log().all();
+	//pass the response of the request in another request
 	
 	given().pathParam("proId", pid)
 	
 	.when().get("/projects/{proId}")
 	
 	.then().log().all();
-	
 }
 }

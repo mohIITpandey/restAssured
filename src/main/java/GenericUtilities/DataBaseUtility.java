@@ -16,8 +16,6 @@ public class DataBaseUtility {
      	DriverManager.registerDriver(driver);
 		connection = DriverManager.getConnection(IConstants.dbUrl, IConstants.dbUserName,IConstants.dbPassword);
 	}
-	
-	
 	public void query(String name) throws SQLException {
 		Statement statement = connection.createStatement();
 		ResultSet res = statement.executeQuery("select * from project;");
@@ -28,8 +26,6 @@ public class DataBaseUtility {
 			}
 		}
 	}}
-	
-	
 	public void closeDataBaseConnection() throws SQLException {
 		connection.close();
 	}
@@ -58,6 +54,4 @@ public class DataBaseUtility {
 			return "";
 		}
 	}
-	
-
-}
+	}

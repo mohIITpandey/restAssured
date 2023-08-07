@@ -10,7 +10,6 @@ public class getRepoFromBearerToken {
 public void test() {
 	baseURI="https://api.github.com";
 	
-	
 	given().auth().oauth2("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")
 	
 	.when().get("/repos/mohIITpandey/Mohit44")

@@ -10,7 +10,6 @@ import static io.restassured.RestAssured.*;
 
 public class JsonSchema {
 @Test
-
 public void test() {
 	File f=new File(".\\src\\test\\resources\\jsonformatter1.json");
 	when().get("https://reqres.in/api/users?page=2")

@@ -10,9 +10,7 @@ import java.util.HashMap;
 
 public class QueryForPostReques {
 @Test
-
 public void test() {
- 
 	baseURI="https://reqres.in";
 	HashMap<String, String> map= new HashMap<String, String>();
 	map.put("name","mahi");

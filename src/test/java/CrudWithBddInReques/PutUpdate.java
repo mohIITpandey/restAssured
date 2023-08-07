@@ -15,6 +15,6 @@ public class PutUpdate {
 			jobj.put("name","rocky bhai");
 			jobj.put("job","Team Lead");
 			  
-			given().body(jobj).contentType(ContentType.JSON).when().put("https://reqres.in/api/users/2").then().log().all().assertThat().statusCode(200);
+		given().body(jobj).contentType(ContentType.JSON).when().put("https://reqres.in/api/users/2").then().log().all().assertThat().statusCode(200);
 		}
 }

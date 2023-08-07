@@ -17,6 +17,5 @@ public void test() throws JsonParseException, JsonMappingException, IOException 
 	  System.out.println(ReadData.getEid()); 
 	  System.out.println(ReadData.getPhoneNo()[0]);
 	  System.out.println(ReadData.getPhoneNo()[1]);
-
 }
 }

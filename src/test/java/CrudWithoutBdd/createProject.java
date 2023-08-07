@@ -10,12 +10,10 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class createProject {
-
 @Test
 public void createProj() {
 JavaUtility jlib=new JavaUtility();
-	
-	
+		
 	//step1-create the pre requistes--request body
 	JSONObject jObj=new JSONObject();
 	jObj.put("createdBy","Mohittt");
@@ -34,7 +32,5 @@ JavaUtility jlib=new JavaUtility();
 	System.out.println(response.asString());
     System.out.println(response.prettyPrint());
     System.out.println(response.prettyPeek());
-}
-
-	
+}	
 }

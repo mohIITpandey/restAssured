@@ -17,6 +17,5 @@ public class preemitiveAuth {
 		.when().get("/login")
 		
 		.then().assertThat().statusCode(202).log().all();
-		
 	}
 }

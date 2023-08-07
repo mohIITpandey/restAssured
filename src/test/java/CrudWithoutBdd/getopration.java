@@ -13,7 +13,5 @@ public  void allproj() {
 	   resq.then().log().all();
 	   int actstat = resq.getStatusCode();
 	   Assert.assertEquals(200,actstat);
-	
-	
 }
 }

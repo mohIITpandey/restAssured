@@ -4,8 +4,6 @@ package GenericUtilities;
  * @author mohit
  *
  */
-
-
 public interface EndpointsLibrary {
 	String createProject="/addProject";
 	String updateProject="/projects/";

@@ -10,9 +10,7 @@ import io.restassured.http.ContentType;
 import static io.restassured.RestAssured.*;
 
 public class Hashmap {
-
 	@Test
-	
 	public void test() {
 		baseURI="http://rmgtestingserver";
 		port=8084;
@@ -27,10 +25,8 @@ public class Hashmap {
 		
 		given().body(map).contentType(ContentType.JSON)
 		
-		
 		.when().post("/addProject")
 		
 		.then().log().all().assertThat().statusCode(201);
-
 	}
 }

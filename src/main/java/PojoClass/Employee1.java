@@ -38,6 +38,5 @@ public class Employee1 {
 	}
 	public void setPhoneNo(long[] phoneNo) {
 		this.phoneNo = phoneNo;
-	}
-	 
+	}	 
 }

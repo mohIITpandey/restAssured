@@ -19,9 +19,7 @@ public void test() {
 	String expected_pragma="no-cache";
 	String expected_connection="keep-alive";
 	
-	
 	Response res = when().get("/projects/TY_PROJ_8938");
-	
 	
 	Headers header = res.getHeaders();
 	System.out.println(header);
@@ -34,15 +32,13 @@ public void test() {
 	System.out.println(actualVary);
 	Assert.assertEquals(actualVary,actual_Vary );
 	
-	 String contentType = res.getHeader("Content-type");
+	String contentType = res.getHeader("Content-type");
 	Assert.assertEquals(contentType,expected_contentType );
 
 	String pragma = res.getHeader("Pragma");
 	Assert.assertEquals(pragma,expected_pragma );
 
 	String connection = res.getHeader("Connection");
-	Assert.assertEquals(connection,expected_connection );
-
-	
+	Assert.assertEquals(connection,expected_connection );	
 }
 }

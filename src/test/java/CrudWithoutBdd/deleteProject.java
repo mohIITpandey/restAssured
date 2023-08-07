@@ -12,8 +12,6 @@ public class deleteProject {
 		Response resq = RestAssured.delete("http://rmgtestingserver:8084/projects/TY_PROJ_7813");
 		   resq.then().log().all();
 		   int actstat = resq.getStatusCode();
-		   Assert.assertEquals(204,actstat);
-		
-		
+		   Assert.assertEquals(204,actstat);	
 	}
 }

@@ -22,23 +22,16 @@ public void createPojoo() throws SQLException  {
 	CreatePojo poj=new CreatePojo("mohit", "anything"+jlib.getRandomNum(),"createddd", 3);
 	
 	Response response=given().spec(reqB).body(poj)
-			 .when().post(EndpointsLibrary.createProject);
-	         String expData =resLib.getJsonData(response,"projectId");
-	         System.out.println(expData);
+			.when().post(EndpointsLibrary.createProject);
+	        String expData =resLib.getJsonData(response,"projectId");
+	        System.out.println(expData);
 	        String query="select * from project;";
-	       
-	        
-	        
+	     
 	        String actData = DbUtils.readDataFromDBAndValidate(query, 1, expData);
 	        System.out.println(actData+"---------");
 
-	       // AssertJUnit.assertEquals(expData,actData);
 	     System.out.println("OK");
-	        
-	        
-	        response.then().log().all();
-	        
+	                
+	        response.then().log().all();	        
 }
-	
-	
 }

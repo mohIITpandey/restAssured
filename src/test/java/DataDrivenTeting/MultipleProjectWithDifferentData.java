@@ -10,10 +10,7 @@ import io.restassured.http.ContentType;
 import static io.restassured.RestAssured.*;
 
 public class MultipleProjectWithDifferentData {
-
-	
 	@Test(dataProvider = "getData")
-	
 	public void test(String createdBy,String projectName,String status,int teamSize) {
 	JavaUtility jlib=new JavaUtility();
 	CreatePojo poj=new CreatePojo(createdBy, projectName+jlib.getRandomNum(), status, teamSize);
@@ -26,9 +23,7 @@ public class MultipleProjectWithDifferentData {
 	.when().post("/addProject")
 	
 	.then().log().all();
-	
 	}
-	
 	@DataProvider(name="getData")
 	public Object[][] data(){
 		Object [][] data=new Object[3][4];
@@ -48,8 +43,5 @@ public class MultipleProjectWithDifferentData {
 	     data[2][3]=14;
 	     
 	     return data;
-
 	}
-	
-	
 }

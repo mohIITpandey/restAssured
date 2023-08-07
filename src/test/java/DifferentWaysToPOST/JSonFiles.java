@@ -15,8 +15,6 @@ public void files() {
 	port=8084;
 	File fis= new File("./src/test/resources/jsonfile111.json");
 	
-//	File f= new File(".\\src\\test\\resources\\jsonfile111.json");
-	
 	 given().body(fis).contentType(ContentType.JSON)
 		
 		.when().post("/addProject")

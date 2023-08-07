@@ -5,8 +5,6 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 
 public class BasicAuth {
-	
-	
 	@Test
 	public void test() {
 		baseURI="http://rmgtestingserver";
@@ -16,8 +14,6 @@ public class BasicAuth {
 		
 		.when().get("/login")
 		
-		.then().assertThat().statusCode(202).log().all();
-		
+		.then().assertThat().statusCode(202).log().all();	
 	}
-
 }

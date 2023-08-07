@@ -25,10 +25,5 @@ public class PostWithPojo {
 	 given().body(poj).contentType(ContentType.JSON)
 	
 	.when().post("/addProject").then().log().all().assertThat().statusCode(201);
-	
-	
-	
-	
 	}
-
 }
